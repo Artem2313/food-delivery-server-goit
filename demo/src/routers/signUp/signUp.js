@@ -17,7 +17,7 @@ const signUpRoute = async (request, response) => {
       !userName.email
     ) {
       response.writeHead(400, { "Content-Type": "text/plain" });
-      response.write("Invalid");
+      response.write("Error: Invalid Request");
       response.end();
       return;
     }
